@@ -11,6 +11,26 @@ Pandas 3.0.3
 
 ## Árvore do projeto
 
+<pre>
+├── data
+│   ├── processed
+│   │   └── Base_Varejo_Limpa.csv
+│   └── raw
+│       └── Base Varejo.csv
+├── notebooks
+│   └── MiniProjetoAvaliativo.ipynb
+├── outputs
+│   ├── charts
+│   └── reports
+├── README_JulioCesarFernandesNeto_TurmaT2.md
+└── src
+    ├── __pycache__
+    │   └── utils.cpython-313.pyc
+    └── utils.py
+
+10 directories, 6 files
+</pre>
+
 ## Instruções
 
 ## Dicionário de datos Base_Varejo_Limpa.csv
