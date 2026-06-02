@@ -33,6 +33,8 @@ Pandas 3.0.3
 
 ## Instruções
 
+Abra o arquivo MiniProjetoAvaliativo.ipynb no VS Code e execute todas as células em sequência. Repare que o arquivo já vem com as saídas pertinentes.
+
 ## Dicionário de datos Base_Varejo_Limpa.csv
 
 0. DATA: Data da compra;
@@ -61,3 +63,17 @@ Pandas 3.0.3
 -A coluna 4 originalmente armazena números que representam o estado civil. Então, os números foram trocados pelo estado civil e a coluna 5 foi convertida em tipo categórico.
 
 ## Conclusões
+
+Na separação dos clientes por gênero, 52,05% são mulheres e 47,95% são homens.
+
+O máximo de filhos por cliente é 4.
+
+A maioria dos clientes possui estado civil "SEPARADO".
+
+"ALIMENTOS", "HIGIENE" e "LIMPEZA" são as categorias que mais vendem. As porcentagens são, respectivamente, 52,38%, 18,77% e 17,54%. As demais categorias somadas correspondem a 11,3%.
+
+Quando separamos as vendas por classe social, a ordem das categorias mais vendidas não se altera. Além disso, as porcentagens também variam pouco.
+
+Quando separamos as vendas totais por anos (entre 2019 e 2022), vemos um crescimento das vendas ano a ano, menos quando chega em 2022, quando uma queda é registrada, ficando abaixo de 2019, o primeiro ano do registro.
+
+Quando separamos cinco produtos mais vendidos por estado civil, notamos que presunto cozido é o produto mais vendido em todas as categorias. É digno de nota que solteiros compram papinha infantil, casados ou em união estável compram preservativo e separados compram chupeta. Esses aspectos merecem uma investigação mais aprofundada.
