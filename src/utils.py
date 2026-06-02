@@ -9,15 +9,17 @@ def convert_for_category(dataframe, List_column):
 # Converte colunas de string para datetime no formato DD/MM/YYYY
 def convert_datetime(df, column_name):
   
+    if not datetime_ok(df, column_name):
+        return "Formatação inválida"
+
     df[column_name] = pd.to_datetime(df[column_name], format='%d/%m/%Y', errors='coerce')
+    
+    return "Conversão bem-sucedida"
 
 # Verificar se alguma string não está no formato DD/MM/AAAA
-def check_date_format(df, column_name):
+def datetime_ok(df, column_name):
     
     date_pattern = r"^\d{2}/\d{2}/\d{4}$"
 
-    # Listar valores que não correspondem ao padrão de data
-    is_valid = df[column_name].astype(str).str.contains(date_pattern, regex=True)
-    unformated_date = df.loc[~is_valid, column_name].tolist()
-
-    return unformated_date
+    # Retorna True se todas as strings na coluna corresponderem ao padrão, caso contrário, retorna False
+    return df[column_name].astype(str).str.contains(date_pattern, regex=True).all()
