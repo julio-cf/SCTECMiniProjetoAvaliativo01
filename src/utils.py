@@ -1,7 +1,18 @@
 import pandas as pd
 
+def change_map(df, column_name):
+    marital_status_map = {
+        1: "CASADO OU UNIÃO ESTÁVEL",
+        2: "DIVORCIADO",
+        3: "SEPARADO",
+        4: "SOLTEIRO",
+        5: "VIÚVO",
+    }
+
+    df[column_name] = df[column_name].map(marital_status_map)
+
 # Converte colunas para o tipo categórico
-def convert_for_category(dataframe, List_column):
+def convert_category(dataframe, List_column):
     
     for column in List_column:
         dataframe[column] = dataframe[column].astype('category')
